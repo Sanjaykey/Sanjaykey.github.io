@@ -57,20 +57,18 @@ nav ul {
   list-style: none;
   margin: var(--space-2) 0 0 0;
   padding: 0;
-  text-align: center;
-}
-
-nav li {
-  display: inline-block;
-  margin: var(--space-1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
 }
 
 nav a {
-  display: inline-block;
+  display: block;
   padding: var(--space-1) var(--space-2);
   border: 2px solid #c3926c;
   color: #c3926c;
   text-decoration: none;
+  text-align: center;
 }
 
 .tagline {
@@ -123,6 +121,10 @@ footer {
 
   .interest-columns > div {
     flex: 1;
+  }
+
+  nav ul {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
